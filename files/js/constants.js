@@ -1,4 +1,4 @@
-const PROXY_URL = "https://account-public-service-prod03.ol.epicgames.com";
+const PROXY_URL = "http://63.245.220.3:3000";
 
 const DEFAULT_PARTY_META = Object.freeze(
     {
