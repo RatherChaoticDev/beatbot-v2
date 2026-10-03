@@ -1,4 +1,4 @@
-const PROXY_URL = "http://63.245.220.3:3000";
+const PROXY_URL = "https://caddy-proxy-production-0d3a.up.railway.app";
 
 const DEFAULT_PARTY_META = Object.freeze(
     {
