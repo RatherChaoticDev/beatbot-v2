@@ -1,6 +1,7 @@
 const ACCOUNT_PROXY_URL = "https://cors-anywhere.herokuapp.com/https://account-public-service-prod.ol.epicgames.com";
 const FRIENDS_PROXY_URL = "https://cors-anywhere.herokuapp.com/https://friends-public-service-prod.ol.epicgames.com";
 const PARTY_PROXY_URL = "https://cors-anywhere.herokuapp.com/https://party-service-prod.ol.epicgames.com";
+const MCP_PROXY_URL = "https://cors-anywhere.herokuapp.com/https://fngw-mcp-gc-livefn.ol.epicgames.com";
 
 
 const DEFAULT_PARTY_META = Object.freeze(
