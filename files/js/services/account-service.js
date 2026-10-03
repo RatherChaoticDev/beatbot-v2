@@ -3,8 +3,7 @@
 class AccountService {
     /**
     * 
-    * @param {Token} session 
-    */
+    * @param {Token} session     */
     constructor(session) {
         if (session) {
             const expiration = new Date(session.expires_at);
@@ -46,7 +45,7 @@ class AccountService {
      */
     async verify() {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/verify`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/verify`,
             {
                 headers: {
                     Authorization: `${this.session.token_type || 'bearer'} ${this.session.access_token}`,
@@ -72,7 +71,7 @@ class AccountService {
      */
     async getAccessToken(clientId, secrect, grantType, fields) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/token`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/token`,
             {
                 body: new URLSearchParams(
                     {
@@ -104,7 +103,7 @@ class AccountService {
      */
     async killSessions(killType) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/sessions/kill?killType=${killType}`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/sessions/kill?killType=${killType}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
@@ -125,7 +124,7 @@ class AccountService {
      */
     async killSession(accessToken) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/sessions/kill/${accessToken ?? this.session.access_token}`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/sessions/kill/${accessToken ?? this.session.access_token}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type ?? 'bearer'} ${accessToken ?? this.session.access_token}`
@@ -145,7 +144,7 @@ class AccountService {
      */
     async initiatePinAuth(promt) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/deviceAuthorization`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/deviceAuthorization`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
@@ -172,7 +171,7 @@ class AccountService {
      */
     async cancelPinAuth(userCode) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/oauth/deviceAuthorization/${userCode}`,
+            `${ACCOUNT_PROXY_URL}/account/api/oauth/deviceAuthorization/${userCode}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
@@ -193,7 +192,7 @@ class AccountService {
         );
 
         const response = await fetch(
-            `${PROXY_URL}/account/api/public/account?${searchParams}`,
+            `${ACCOUNT_PROXY_URL}/account/api/public/account?${searchParams}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
@@ -216,7 +215,7 @@ class AccountService {
      */
     async getById(accountId) {
         const response = await fetch(
-            `${PROXY_URL}/account/api/public/account/${accountId}`,
+            `${ACCOUNT_PROXY_URL}/account/api/public/account/${accountId}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
