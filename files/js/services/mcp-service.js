@@ -30,7 +30,7 @@ class McpService {
             }
         )
         const response = await fetch(
-            `${PROXY_URL}/fortnite/api/game/v2/matchmakingservice/ticket/player/${this.session.account_id}?${parms.toString()}`,
+            `${MCP_PROXY_URL}/fortnite/api/game/v2/matchmakingservice/ticket/player/${this.session.account_id}?${parms.toString()}`,
             {
                 headers: {
                     Authorization: `${this.session.token_type} ${this.session.access_token}`,
