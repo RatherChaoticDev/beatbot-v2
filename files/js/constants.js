@@ -1,4 +1,4 @@
-const PROXY_URL = "https://caddy-proxy-production-0d3a.up.railway.app";
+const PROXY_URL = "https://cors-anywhere.herokuapp.com/https://account-public-service-prod.ol.epicgames.com";
 
 const DEFAULT_PARTY_META = Object.freeze(
     {
