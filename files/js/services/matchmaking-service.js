@@ -1,12 +1,12 @@
 const matchmakingDomains = {
-    "fortnite-matchmaking-public-service-live-oce.ol.epicgames.com": "mms-proxy-live-oce.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-nae.ol.epicgames.com": "mms-proxy-live-nae.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-nac.ol.epicgames.com": "mms-proxy-live-nae.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-naw.ol.epicgames.com": "mms-proxy-live-nae.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-eu.ol.epicgames.com": "mms-proxy-live-eu.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-br.ol.epicgames.com": "mms-proxy-live-br.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-asia.ol.epicgames.com": "mms-proxy-live-asia.9840003.xyz",
-    "fortnite-matchmaking-public-service-live-me.ol.epicgames.com": "mms-proxy-live-me.9840003.xyz",
+    "fortnite-matchmaking-public-service-live-oce.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-oce.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-nae.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-nae.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-nac.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-nac.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-naw.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-naw.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-eu.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-eu.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-br.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-br.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-asia.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-asia.ol.epicgames.com",
+    "fortnite-matchmaking-public-service-live-me.ol.epicgames.com": "https://cors-anywhere.herokuapp.com/fortnite-matchmaking-public-service-live-me.ol.epicgames.com",
 }
 
 /**
